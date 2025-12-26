@@ -52,9 +52,9 @@ python app_hf.py
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| Training Accuracy | XX% | Accuracy on training subset |
-| Validation Accuracy | XX% | Accuracy on validation subset |
-| Test Accuracy | XX% | Accuracy on test subset |
+| Training Accuracy | 72.2% | Accuracy on training subset |
+| Validation Accuracy | 21.5% | Accuracy on validation subset |
+| Test Accuracy | 21.5% | Accuracy on test subset |
 | Top-5 Accuracy | XX% | Accuracy within top-5 predictions |
 | Training Time | ~15 min | On NVIDIA GTX 1650 |
 
