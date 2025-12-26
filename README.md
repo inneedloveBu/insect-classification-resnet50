@@ -1,8 +1,13 @@
-
 # IP102 Insect Classification with ResNet50V2
 
 ## 🎯 Project Overview
 A deep learning-based insect classification system implemented using TensorFlow and ResNet50V2, trained on the IP102 dataset containing 102 insect classes. This project demonstrates practical computer vision skills with applications in biodiversity monitoring and agricultural technology.
+
+The system provides both a training pipeline and an interactive web interface for insect classification, showcasing end-to-end development from model training to deployment.
+
+## 🌐 Live Demos
+- **Hugging Face Spaces**: [Interactive Web Interface](https://huggingface.co/spaces/indeedlove/insect-classifier)
+- **GitHub Repository**: [Source Code & Documentation](https://github.com/inneedloveBu/insect-classification-resnet50)
 
 ## 📊 Technical Stack
 - **TensorFlow 2.x** - Deep learning framework
@@ -53,26 +58,6 @@ python app_hf.py
 | Top-5 Accuracy | XX% | Accuracy within top-5 predictions |
 | Training Time | ~15 min | On NVIDIA GTX 1650 |
 
-## 🎓 Relevance to QMUL MSc Data Science Curriculum
-
-This project demonstrates skills relevant to the QMUL Data Science MSc:
-
-### **Applied Machine Learning**
-- Data Mining and preprocessing
-- Deep learning implementation
-- Transfer learning techniques
-- Model evaluation and validation
-
-### **Big Data & Cloud Computing**
-- Large-scale data processing
-- Cloud deployment (Hugging Face Spaces)
-- Web application development
-
-### **Domain-Specific Applications**
-- Computer Vision: Image classification
-- Data Visualization and interpretation
-- Practical real-world application
-
 ## 🔬 Technical Implementation
 
 ### Model Architecture
@@ -113,7 +98,3 @@ This project demonstrates skills relevant to the QMUL Data Science MSc:
 
 ## 📄 License
 MIT License
-
----
-
-*Developed as part of preparation for QMUL MSc Data Science program.*
