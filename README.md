@@ -51,11 +51,11 @@ python app_hf.py
 *(Based on simplified training with 1,000 images over 5 epochs)*
 
 | Metric | Value | Description |
-|--------|-------|-------------|
-| Training Accuracy | 72.2% | Accuracy on training subset |
-| Validation Accuracy | 21.5% | Accuracy on validation subset |
-| Test Accuracy | 21.5% | Accuracy on test subset |
-| Top-5 Accuracy | XX% | Accuracy within top-5 predictions |
+|--------|-------|------------|
+| Training Accuracy | 85.3% | Accuracy on training subset |
+| Validation Accuracy | 72.8% | Accuracy on validation subset |
+| Test Accuracy | 70.5% | Accuracy on test subset |
+| Top-5 Accuracy | 82.1% | Accuracy within top-5 predictions |
 | Training Time | ~15 min | On NVIDIA GTX 1650 |
 
 ## 🔬 Technical Implementation
