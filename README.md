@@ -158,7 +158,9 @@ This project demonstrates **expert-level competency** in:
 **Training Details**: Two-phase training (15 epochs total), batch size 32, Adam optimizer with learning rate scheduling, enhanced data augmentation.
 **Hardware**: NVIDIA GTX 1650 GPU, 8GB VRAM, 16GB RAM
 **Repository**: Complete code, trained models, and analysis available at [GitHub](https://github.com/inneedloveBu/insect-classification-resnet50)
-## 🔬 Technical Implementation
+
+## 📁 Repository Structure
+![s截图1227223548](https://github.com/user-attachments/assets/6f8f9ffc-0ded-46e7-b39f-eb98e1d365e0)
 
 
 
