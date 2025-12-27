@@ -1,4 +1,6 @@
 # IP102 Insect Classification with ResNet50V2
+<img width="1440" height="739" alt="ScreenShot_2025-12-26_203110_107" src="https://github.com/user-attachments/assets/66deff62-291c-4d96-9632-61f354b57ec7" />
+
 
 ## 🎯 Project Overview
 A deep learning-based insect classification system implemented using TensorFlow and ResNet50V2, trained on the IP102 dataset containing 102 insect classes. This project demonstrates practical computer vision skills with applications in biodiversity monitoring and agricultural technology.
