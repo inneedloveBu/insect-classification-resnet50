@@ -150,6 +150,8 @@ This project demonstrates **expert-level competency** in:
 2. **Advanced Optimization**: Achieving 49.3× improvement over baseline
 3. **Full Pipeline Development**: From data processing to model deployment
 4. **Analytical Rigor**: Detailed performance analysis and error diagnosis
+<img width="3474" height="1780" alt="performance_comparison" src="https://github.com/user-attachments/assets/f0a286ff-e3a0-4862-9bec-35dba7a384fd" />
+<img width="2941" height="1470" alt="improvement_timeline" src="https://github.com/user-attachments/assets/c85a9955-7525-4b4d-a715-a8a486d7ab2b" />
 
 ---
 
