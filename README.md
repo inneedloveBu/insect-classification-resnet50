@@ -7,9 +7,9 @@ A deep learning-based insect classification system implemented using TensorFlow 
 
 The system provides both a training pipeline and an interactive web interface for insect classification, showcasing end-to-end development from model training to deployment.
 
-## 🌐 Live Demos
-- **Hugging Face Spaces**: [Interactive Web Interface](https://huggingface.co/spaces/indeedlove/insect-classifier)
-- **GitHub Repository**: [Source Code & Documentation](https://github.com/inneedloveBu/insect-classification-resnet50)
+### 🔗 Live Demo & Code
+- **[Hugging Face Spaces](https://huggingface.co/spaces/indeedlove/insect-classifier)** - Interactive web interface
+- **[GitHub Repository](https://github.com/inneedloveBu/insect-classification-resnet50)** - Complete code & documentation
 
 ## 📊 Technical Stack
 - **TensorFlow 2.x** - Deep learning framework
