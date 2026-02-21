@@ -127,18 +127,27 @@ Biodiversity Monitoring: Automated species classification
 Educational Value: Accessible insect recognition tool
 Research Foundation: Strong baseline for future improvements
 ###🔮 Optimization Roadmap & Future Work
-✅ Achieved Goals
+## ✅ Achieved Goals
 Accuracy >50% (achieved 58.28%)
 Balanced sampling across 102 classes
 Advanced data augmentation
 Correct ImageNet preprocessing
 
+## 🚧 Immediate Improvements (Target >60%)
+Increase training samples – use full 45k training set (currently 13.6k)
 
-#### **Advanced Research Directions**
-1. **Multi-modal learning** (images + metadata)
-2. **Few-shot learning** for rare species
-3. **Domain adaptation** for field conditions
-4. **Real-time mobile deployment**
+Experiment with Mixup/CutMix – improves generalization
+
+Try EfficientNetB3/B4 – potentially higher accuracy
+
+Implement test-time augmentation (TTA) – boosts final predictions
+
+###🔭 Advanced Research Directions
+1.**Ensemble multiple architectures (ResNet + EfficientNet)**
+2.***Attention mechanisms (SENet, CBAM)**
+3.**Knowledge distillation for lighter models**
+4.**Real-time mobile deployment (TensorFlow Lite)**
+
 
 ### 🎓 Project Significance for Data Science
 
