@@ -147,7 +147,12 @@ This project demonstrates **expert-level competency** in:
 2. **Advanced Optimization**: Achieving 49.3× improvement over baseline
 3. **Full Pipeline Development**: From data processing to model deployment
 4. **Analytical Rigor**: Detailed performance analysis and error diagnosis
+
+
+<img width="1784" height="581" alt="training_history" src="https://github.com/user-attachments/assets/3f6572cf-e835-44be-89db-9169fb7d3882" />
+
 <img width="3474" height="1780" alt="performance_comparison" src="https://github.com/user-attachments/assets/f0a286ff-e3a0-4862-9bec-35dba7a384fd" />
+
 <img width="2941" height="1470" alt="improvement_timeline" src="https://github.com/user-attachments/assets/c85a9955-7525-4b4d-a715-a8a486d7ab2b" />
 
 ---
@@ -159,6 +164,7 @@ This project demonstrates **expert-level competency** in:
 ## 📁 Repository Structure
 ![s截图1227223548](https://github.com/user-attachments/assets/6f8f9ffc-0ded-46e7-b39f-eb98e1d365e0)
 
+<img width="1784" height="581" alt="training_history" src="https://github.com/user-attachments/assets/2e1e03e0-97d4-4f5c-af0a-4010a389b30f" />
 
 
 ## 📚 References
