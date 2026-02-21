@@ -53,8 +53,8 @@ python app_hf.py
 
 
 
-##📊 Experimental Results
-##🎯 Performance Summary
+## 📊 Experimental Results
+### 🎯 Performance Summary
 Metric	Value	Improvement over Random
 Validation Accuracy (Top-1)	58.28%	59.5× better
 Estimated Top-5 Accuracy	~91%	Critical for practical use
@@ -66,7 +66,7 @@ Initial (Simple)	1,000 images	32.75%	Baseline transfer learning
 Improved v1	10,000 images	32.75%	Balanced sampling, basic augmentation
 Advanced v2	15,000 images	48.3%	Enhanced architecture, two-phase training
 Advanced v3 (Final)	13,616 (balanced)	58.28%	Optimized preprocessing, class weights, refined augmentation
-###🏆 Key Technical Achievements
+### 🏆 Key Technical Achievements
 59.5× improvement over random chance (0.98% → 58.28%)
 
 78% relative improvement over previous best (32.75% → 58.28%)
@@ -75,7 +75,7 @@ State-of-the-art level performance on IP102 dataset
 
 Robust training strategy with minimal overfitting
 
-###🔬 Technical Analysis
+### 🔬 Technical Analysis
 Training Performance
 Final Validation Accuracy: 58.28%
 
@@ -100,7 +100,7 @@ Advanced Augmentation: Random flip, rotation, zoom, contrast, brightness
 Corrected Preprocessing: Using preprocess_input instead of raw /255.0
 Efficient Pipeline: TensorFlow data API with prefetching
 
-###📊 Detailed Performance Metrics
+### 📊 Detailed Performance Metrics
 Accuracy by Insect Category Group
 Category Type	Accuracy Range	Characteristic
 Large, Distinctive Insects	65-75%	Clear visual features
@@ -115,7 +115,7 @@ Different life stages of same species (caterpillar vs adult)
 Species with high visual similarity (different beetles)
 Images with poor lighting/occlusion
 
-###🚀 Performance Context & Significance
+### 🚀 Performance Context & Significance
 Academic Context
 Random Baseline: 0.98% (102-class random guess)
 Previous Personal Best: 32.75%
@@ -133,11 +133,6 @@ Balanced sampling across 102 classes
 Advanced data augmentation
 Correct ImageNet preprocessing
 
-#### **Medium-term Goals (Accuracy >55%)**
-1. **Ensemble multiple model architectures**
-2. **Incorporate attention mechanisms**
-3. **Use test-time augmentation**
-4. **Implement knowledge distillation**
 
 #### **Advanced Research Directions**
 1. **Multi-modal learning** (images + metadata)
