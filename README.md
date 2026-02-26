@@ -1,15 +1,15 @@
 # IP102 Insect Classification with ResNet50V2
 <img width="1440" height="739" alt="ScreenShot_2025-12-26_203110_107" src="https://github.com/user-attachments/assets/66deff62-291c-4d96-9632-61f354b57ec7" />
 
-
+[![Hugging Face Spaces](https://img.shields.io/badge/🤗-Live%20Demo-blue)](https://huggingface.co/spaces/indeedlove/insect-classifier)
+[![GitHub](https://img.shields.io/badge/📂-View%20on%20GitHub-black)](https://github.com/inneedloveBu/insect-classification-resnet50)
+[![bilibili](https://img.shields.io/badge/🎥-View%20on%20Bilibili-yellow)](https://www.bilibili.com/video/BV1zKvrBAEK1/?share_source=copy_web&vd_source=56cdc7ef44ed1ee2c9b9515febf8e9ce&t=1)) 
 ## 🎯 Project Overview
 A deep learning-based insect classification system implemented using TensorFlow and ResNet50V2, trained on the IP102 dataset containing 102 insect classes. This project demonstrates practical computer vision skills with applications in biodiversity monitoring and agricultural technology.
 
 The system provides both a training pipeline and an interactive web interface for insect classification, showcasing end-to-end development from model training to deployment.
 
-### 🔗 Live Demo & Code
-- **[Hugging Face Spaces](https://huggingface.co/spaces/indeedlove/insect-classifier)** - Interactive web interface
-- **[GitHub Repository](https://github.com/inneedloveBu/insect-classification-resnet50)** - Complete code & documentation
+
 
 ## 📊 Technical Stack
 - **TensorFlow 2.x** - Deep learning framework
