@@ -1,17 +1,18 @@
-# IP102 Insect Classification with ResNet50V2
+# 🐞 Insect Pest Classification using Transfer Learning (ResNet50)
 
 
 [![bilibili](https://img.shields.io/badge/🎥-Video%20on%20Bilibili-red)](https://www.bilibili.com/video/BV1zKvrBAEK1/?share_source=copy_web&vd_source=56cdc7ef44ed1ee2c9b9515febf8e9ce&t=1)
 
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗-Hugging%20Face%20Spaces-blue)](https://huggingface.co/spaces/indeedlove/insect-classifier)
 [![GitHub](https://img.shields.io/badge/📂-GitHub-black)](https://github.com/inneedloveBu/insect-classification-resnet50)
-<img width="1440" height="739" alt="ScreenShot_2025-12-26_203110_107" src="https://github.com/user-attachments/assets/66deff62-291c-4d96-9632-61f354b57ec7" />
-
-# 🐞 Insect Pest Classification using Transfer Learning (ResNet50)
-
 [![Python](https://img.shields.io/badge/Python-3.10-blue)]
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)]
 [![Deep Learning](https://img.shields.io/badge/DeepLearning-CNN-green)]
+<img width="1440" height="739" alt="ScreenShot_2025-12-26_203110_107" src="https://github.com/user-attachments/assets/66deff62-291c-4d96-9632-61f354b57ec7" />
+
+
+
+
 
 ---
 
@@ -41,16 +42,16 @@ Dataset characteristics:
 - real-world agricultural environments
 - significant class imbalance
 
-Directory structure:
+---
 
+# Project Structure
 
-ip102_v1.1/
-images/
-train.txt
-val.txt
-test.txt
+## 📁 Repository Structure
+![s截图1227223548](https://github.com/user-attachments/assets/6f8f9ffc-0ded-46e7-b39f-eb98e1d365e0)
 
+<img width="1784" height="581" alt="training_history" src="https://github.com/user-attachments/assets/2e1e03e0-97d4-4f5c-af0a-4010a389b30f" />
 
+---
 Each TXT file contains:
 
 
@@ -169,16 +170,7 @@ The relatively low Top-1 accuracy reflects the **difficulty of the IP102 dataset
 
 Despite this, the **Top-5 accuracy of 9.48%** indicates that the model frequently places the correct class among the top candidate predictions, demonstrating the ability to learn useful visual representations.
 
----
 
-# Project Structure
-
-## 📁 Repository Structure
-![s截图1227223548](https://github.com/user-attachments/assets/6f8f9ffc-0ded-46e7-b39f-eb98e1d365e0)
-
-<img width="1784" height="581" alt="training_history" src="https://github.com/user-attachments/assets/2e1e03e0-97d4-4f5c-af0a-4010a389b30f" />
-
----
 
 # Future Improvements
 
@@ -221,12 +213,6 @@ This project demonstrates practical experience in:
 - Machine Learning Pipeline Design
 
 ---
-
-# License
-
-MIT License
-
-
 <img width="1784" height="581" alt="training_history" src="https://github.com/user-attachments/assets/3f6572cf-e835-44be-89db-9169fb7d3882" />
 
 <img width="3510" height="1780" alt="improvement_timeline" src="https://github.com/user-attachments/assets/0c8e81ad-88a4-4e9e-8a15-e555cf0b8377" />
