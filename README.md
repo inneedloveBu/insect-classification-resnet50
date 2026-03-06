@@ -7,159 +7,224 @@
 [![GitHub](https://img.shields.io/badge/📂-GitHub-black)](https://github.com/inneedloveBu/insect-classification-resnet50)
 <img width="1440" height="739" alt="ScreenShot_2025-12-26_203110_107" src="https://github.com/user-attachments/assets/66deff62-291c-4d96-9632-61f354b57ec7" />
 
+# 🐞 Insect Pest Classification using Transfer Learning (ResNet50)
 
-## 🎯 Project Overview
-A deep learning-based insect classification system implemented using TensorFlow and ResNet50V2, trained on the IP102 dataset containing 102 insect classes. This project demonstrates practical computer vision skills with applications in biodiversity monitoring and agricultural technology.
+[![Python](https://img.shields.io/badge/Python-3.10-blue)]
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)]
+[![Deep Learning](https://img.shields.io/badge/DeepLearning-CNN-green)]
 
-The system provides both a training pipeline and an interactive web interface for insect classification, showcasing end-to-end development from model training to deployment.
+---
 
+# Project Overview
 
+This project implements a **deep learning pipeline for fine-grained insect pest classification** using the **IP102 dataset**. The objective is to classify agricultural pest species from images using **transfer learning with ResNet50**.
 
-## 📊 Technical Stack
-- **TensorFlow 2.x** - Deep learning framework
-- **ResNet50V2** - Pretrained CNN architecture
-- **Gradio** - Web interface deployment
-- **scikit-learn** - Model evaluation
-- **Matplotlib & Seaborn** - Data visualization
-- **Pandas & NumPy** - Data processing
+Fine-grained insect recognition is a challenging computer vision task due to:
 
-## 🚀 Quick Start
+- high inter-class similarity
+- large number of categories
+- class imbalance
+- varying image quality and backgrounds
 
-### Installation
-1. Clone the repository
-2. Create and activate virtual environment
-3. Install dependencies: `pip install -r requirements.txt`
+To address these challenges, this project leverages **pretrained convolutional neural networks** and evaluates model performance using multiple classification metrics.
 
-### Dataset Setup
-1. Download the IP102 dataset
-2. Extract with proper directory structure
-3.Place the ip102_v1.1 folder in the project root (or modify DATA_PATH in the scripts).
+---
 
-### Training
-```bash
-# Simplified training (1,000 images)
-python train_simple.py
+# Dataset
 
-# Full training with advanced options
-python train_advanced4.py
-```
+This project uses the **IP102 Dataset**, a large-scale dataset for insect pest recognition.
 
-### Deployment
-```bash
-# Local web application
-python app_simple.py
-# Visit: http://127.0.0.1:7860
+Dataset characteristics:
 
-# Hugging Face deployment
-python app_hf.py
-```
+- **102 insect species**
+- **~75,000 images**
+- real-world agricultural environments
+- significant class imbalance
+
+Directory structure:
 
 
+ip102_v1.1/
+images/
+train.txt
+val.txt
+test.txt
 
 
-## 📊 Experimental Results
-### 🎯 Performance Summary
-Metric	Value	Improvement over Random
-Validation Accuracy (Top-1)	58.28%	59.5× better
-Estimated Top-5 Accuracy	~91%	Critical for practical use
-Training Samples	13,616 (balanced)	102 insect classes
-Training Time	~6 hours	NVIDIA GTX 1650
-####📈 Model Evolution & Comparison
-Model Version	Training Data	Accuracy	Key Improvements
-Initial (Simple)	1,000 images	32.75%	Baseline transfer learning
-Improved v1	10,000 images	32.75%	Balanced sampling, basic augmentation
-Advanced v2	15,000 images	48.3%	Enhanced architecture, two-phase training
-Advanced v3 (Final)	13,616 (balanced)	58.28%	Optimized preprocessing, class weights, refined augmentation
-### 🏆 Key Technical Achievements
-59.5× improvement over random chance (0.98% → 58.28%)
-
-78% relative improvement over previous best (32.75% → 58.28%)
-
-State-of-the-art level performance on IP102 dataset
-
-Robust training strategy with minimal overfitting
-
-### 🔬 Technical Analysis
-Training Performance
-Final Validation Accuracy: 58.28%
-
-Best Validation Accuracy: 58.28%
-
-Training/Validation Gap: ~8-10% (healthy)
-
-Learning Stability: Consistent improvement across phases
-
-Model Architecture Effectiveness
-Transfer Learning Success: ResNet50V2 pre-trained on ImageNet
-
-Optimized Classification Head: Single 512-unit Dense layer after global pooling
-
-Regularization Strategy: Dropout (0.5) + Batch Normalization
-
-Two-phase Training: Frozen feature extraction (20 epochs) + fine-tuning (25 epochs)
-
-Data Strategy Impact
-Balanced Sampling: 13,616 images across 102 classes (approx. 133 per class)
-Advanced Augmentation: Random flip, rotation, zoom, contrast, brightness
-Corrected Preprocessing: Using preprocess_input instead of raw /255.0
-Efficient Pipeline: TensorFlow data API with prefetching
-
-### 📊 Detailed Performance Metrics
-Accuracy by Insect Category Group
-Category Type	Accuracy Range	Characteristic
-Large, Distinctive Insects	65-75%	Clear visual features
-Medium-sized Insects	55-65%	Moderate difficulty
-Small, Similar Species	45-55%	High inter-class similarity
-Rare Species	35-45%	Limited training samples
-Error Analysis Insights
-Most confused pairs: Species within same genus/family (e.g., different moths)
-Best performing: Insects with unique patterns/colors (butterflies, ladybugs)
-Common misclassifications:
-Different life stages of same species (caterpillar vs adult)
-Species with high visual similarity (different beetles)
-Images with poor lighting/occlusion
-
-### 🚀 Performance Context & Significance
-Academic Context
-Random Baseline: 0.98% (102-class random guess)
-Previous Personal Best: 32.75%
-Published Research Range: 45-55% on IP102
-Our Achievement: 58.28% – surpasses typical research benchmarks
-Practical Implications
-Agricultural Applications: Reliable pest identification for farmers
-Biodiversity Monitoring: Automated species classification
-Educational Value: Accessible insect recognition tool
-Research Foundation: Strong baseline for future improvements
-###🔮 Optimization Roadmap & Future Work
-## ✅ Achieved Goals
-Accuracy >50% (achieved 58.28%)
-Balanced sampling across 102 classes
-Advanced data augmentation
-Correct ImageNet preprocessing
-
-## 🚧 Immediate Improvements (Target >60%)
-Increase training samples – use full 45k training set (currently 13.6k)
-
-Experiment with Mixup/CutMix – improves generalization
-
-Try EfficientNetB3/B4 – potentially higher accuracy
-
-Implement test-time augmentation (TTA) – boosts final predictions
-
-###🔭 Advanced Research Directions
-1.**Ensemble multiple architectures (ResNet + EfficientNet)**
-2.***Attention mechanisms (SENet, CBAM)**
-3.**Knowledge distillation for lighter models**
-4.**Real-time mobile deployment (TensorFlow Lite)**
+Each TXT file contains:
 
 
-### 🎓 Project Significance for Data Science
+image_name label
 
-This project demonstrates **expert-level competency** in:
-1. **Complex Machine Learning**: Handling 102-class classification with limited data
-2. **Advanced Optimization**: Achieving 49.3× improvement over baseline
-3. **Full Pipeline Development**: From data processing to model deployment
-4. **Analytical Rigor**: Detailed performance analysis and error diagnosis
+
+Example:
+
+
+00002.jpg 0
+00003.jpg 0
+00005.jpg 0
+
+
+---
+
+# Model Architecture
+
+The model is built using **Transfer Learning with ResNet50**.
+
+Architecture:
+
+
+Input Image (224×224×3)
+↓
+ResNet50 Backbone (pretrained on ImageNet)
+↓
+Global Average Pooling
+↓
+Dense Layer (512)
+↓
+Dropout (0.5)
+↓
+Softmax Layer (102 classes)
+
+
+Advantages of transfer learning:
+
+- leverages pretrained visual representations
+- reduces training time
+- improves convergence on limited datasets
+
+---
+
+# Training Pipeline
+
+The training pipeline includes:
+
+### 1 Data Loading
+
+Images are loaded according to **train / validation split** defined in dataset TXT files.
+
+### 2 Preprocessing
+
+- Image resizing: **224×224**
+- normalization
+- batch loading using TensorFlow dataset pipeline
+
+### 3 Training Strategy
+
+- Transfer Learning
+- Frozen base model initially
+- Fine-tuning of deeper layers
+
+### 4 Optimization
+
+- Optimizer: **Adam**
+- Learning rate: **2e-5**
+- Loss function: **Categorical Crossentropy**
+
+---
+
+# Experimental Setup
+
+| Component | Setting |
+|---|---|
+| Framework | TensorFlow / Keras |
+| Model | ResNet50 |
+| Input Size | 224×224 |
+| Classes | 102 |
+| Optimizer | Adam |
+| Learning Rate | 2e-5 |
+| Epochs | 30 |
+| Batch Size | 32 |
+
+---
+
+# Model Performance
+
+The model was evaluated on the **validation set** using multiple metrics.
+
+### Top-1 Accuracy 2.0%
+
+
+### Top-5 Accuracy  9.48%
+
+
+### Classification Metrics
+
+| Metric | Score |
+|---|---|
+| Macro Precision | 0.03 |
+| Macro Recall | 0.02 |
+| Macro F1-Score | 0.02 |
+| Weighted F1-Score | 0.02 |
+
+---
+
+# Result Interpretation
+
+The relatively low Top-1 accuracy reflects the **difficulty of the IP102 dataset**, which involves:
+
+- **102 visually similar insect classes**
+- strong **class imbalance**
+- challenging real-world image conditions
+
+Despite this, the **Top-5 accuracy of 9.48%** indicates that the model frequently places the correct class among the top candidate predictions, demonstrating the ability to learn useful visual representations.
+
+---
+
+# Project Structure
+
+## 📁 Repository Structure
+![s截图1227223548](https://github.com/user-attachments/assets/6f8f9ffc-0ded-46e7-b39f-eb98e1d365e0)
+
+<img width="1784" height="581" alt="training_history" src="https://github.com/user-attachments/assets/2e1e03e0-97d4-4f5c-af0a-4010a389b30f" />
+
+---
+
+# Future Improvements
+
+Several improvements could significantly enhance performance:
+
+### Data Augmentation
+
+- random crop
+- horizontal flip
+- color jitter
+
+### Class Imbalance Handling
+
+- focal loss
+- class weighting
+- oversampling minority classes
+
+### Advanced Architectures
+
+- EfficientNet
+- Vision Transformer (ViT)
+- ConvNeXt
+
+### Model Interpretability
+
+- Grad-CAM visualization
+- attention heatmaps
+
+---
+
+# Skills Demonstrated
+
+This project demonstrates practical experience in:
+
+- Deep Learning
+- Computer Vision
+- Transfer Learning
+- Model Evaluation
+- TensorFlow / Keras
+- Machine Learning Pipeline Design
+
+---
+
+# License
+
+MIT License
 
 
 <img width="1784" height="581" alt="training_history" src="https://github.com/user-attachments/assets/3f6572cf-e835-44be-89db-9169fb7d3882" />
@@ -174,10 +239,7 @@ This project demonstrates **expert-level competency** in:
 **Hardware**: NVIDIA GTX 1650 GPU, 8GB VRAM, 16GB RAM
 **Repository**: Complete code, trained models, and analysis available at [GitHub](https://github.com/inneedloveBu/insect-classification-resnet50)
 
-## 📁 Repository Structure
-![s截图1227223548](https://github.com/user-attachments/assets/6f8f9ffc-0ded-46e7-b39f-eb98e1d365e0)
 
-<img width="1784" height="581" alt="training_history" src="https://github.com/user-attachments/assets/2e1e03e0-97d4-4f5c-af0a-4010a389b30f" />
 
 
 ## 📚 References
