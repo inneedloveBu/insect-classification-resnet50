@@ -5,9 +5,9 @@
 
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗-Hugging%20Face%20Spaces-blue)](https://huggingface.co/spaces/indeedlove/insect-classifier)
 [![GitHub](https://img.shields.io/badge/📂-GitHub-black)](https://github.com/inneedloveBu/insect-classification-resnet50)
-[![Python](https://img.shields.io/badge/Python-3.10-blue)]
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)]
-[![Deep Learning](https://img.shields.io/badge/DeepLearning-CNN-green)]
+[![Python](https://img.shields.io/badge/Python-3.10-blue)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+[![Deep Learning](https://img.shields.io/badge/DeepLearning-CNN-green)
 <img width="1440" height="739" alt="ScreenShot_2025-12-26_203110_107" src="https://github.com/user-attachments/assets/66deff62-291c-4d96-9632-61f354b57ec7" />
 
 
